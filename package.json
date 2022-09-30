@@ -1,0 +1,17 @@
+{
+  "name": "crypttool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "npx http-server src",
+    "test": "jest",
+    "tdd": "jest --watch"
+  },
+  "author": "Grégory PAUL",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "jest": "^29.1.2",
+    "jest-environment-jsdom": "^29.1.2"
+  }
+}

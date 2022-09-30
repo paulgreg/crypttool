@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>encryption / decryption tool</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="author" content="Gr&eacute;gory Paul" />
+    <meta name="viewport"
+        content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="A simple encryption tool" />
+    <meta name="theme-color" content="#e9050f" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="shortcut icon" href="./pad-128.png" />
+    <link type="text/css" rel="stylesheet" href="./simple-v1.min.css" />
+    <link type="text/css" rel="stylesheet" href="./index.css" />
+    <script src="./crypto.js" defer></script>
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>encryption / decryption tool</h1>
+    </header>
+    <main>
+        <section>
+            <form>
+                <input type="password" minlength="3" placeholder="password (the longer, the better)" required />
+                <textarea placeholder="Data to encrypt or decrypt (aes 256)" required></textarea>
+                <p class="error">Encryption or decryption failed. Bad password ?</p>
+                <input type="submit" value="encrypt">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
