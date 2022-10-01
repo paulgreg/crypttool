@@ -25,8 +25,9 @@
     <main>
         <section>
             <form>
-                <input type="password" minlength="3" placeholder="password (the longer, the better)" required />
-                <textarea placeholder="Data to encrypt or decrypt (aes 256)" required></textarea>
+                <input type="password" minlength="3" placeholder="password (the longer, the better)" required
+                    spellcheck="false" autocomplete="off" />
+                <textarea placeholder="Data to encrypt or decrypt (aes 256)" required autocomplete="off"></textarea>
                 <p class="error">Encryption or decryption failed. Bad password ?</p>
                 <input type="submit" value="encrypt">
             </form>
