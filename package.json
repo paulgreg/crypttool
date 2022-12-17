@@ -11,7 +11,8 @@
   "author": "Grégory PAUL",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
-    "jest": "^29.1.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
+    "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.1.2"
   }
 }

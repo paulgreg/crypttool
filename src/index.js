@@ -1,3 +1,4 @@
+import { encrypt, decrypt } from './crypto.js'
 const textareaEl = document.querySelector('textarea')
 const formEl = document.querySelector('form')
 const submitEl = document.querySelector('input[type=submit]')
