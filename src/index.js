@@ -18,7 +18,12 @@ const getMsg = (textareaValue) => {
   }
 }
 
+const pauseButton = () => {
+  submitEl.disabled = true
+}
+
 const switchButton = (encrypted) => {
+  submitEl.disabled = false
   submitEl.value = encrypted ? 'decrypt' : 'encrypt'
 }
 
@@ -35,6 +40,7 @@ const displayError = () => {
 const encryptOrDecrypt = () =>
   Promise.resolve()
     .then(() => {
+      pauseButton()
       const passwordValue = passwordEl.value
       const msg = getMsg(textareaEl.value)
 
