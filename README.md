@@ -1,6 +1,6 @@
 # crypttool
 
-A simple encryption / decryption tool in JS using native Crypto API (AES 256 CBC & PBKDF2 for key derivation).
+A simple encryption / decryption tool in JS using native Crypto API (AES 256 GCM & PBKDF2 for key derivation).
 
 It uses browser’s native crypto API.
 
