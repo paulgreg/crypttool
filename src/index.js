@@ -77,7 +77,7 @@ formEl.addEventListener(
 textareaEl.addEventListener(
   'keydown',
   (e) => {
-    if (e.ctrlKey && e.key === 'Enter') {
+    if (e.ctrlKey && e.key === 'Enter' && formEl.checkValidity()) {
       e.preventDefault()
       e.stopPropagation()
       encryptOrDecrypt()
