@@ -22,6 +22,10 @@ const pauseButton = () => {
   submitEl.disabled = true
 }
 
+const unpauseButton = () => {
+  submitEl.disabled = false
+}
+
 const switchButton = (encrypted) => {
   submitEl.disabled = false
   submitEl.value = encrypted ? 'decrypt' : 'encrypt'
@@ -34,7 +38,8 @@ const displayError = () => {
   clearTimeout(errorTimeout)
   errorTimeout = setTimeout(() => {
     errorEl.style.display = ''
-  }, 4000)
+    unpauseButton()
+  }, 2000)
 }
 
 const encryptOrDecrypt = () =>
